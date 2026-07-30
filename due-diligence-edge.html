@@ -2537,7 +2537,7 @@ function dd2RenderChecklist(){
 
       window.ddMostrarApp = function(){
         gate.style.display = 'none';
-        app.style.display = '';
+        app.style.display = 'block';   // 'block' explícito: '' voltaria à regra CSS #dd-app{display:none}
         const lbl = document.getElementById('dd-user-label');
         if(lbl) lbl.textContent = nomeDoToken();
       };
